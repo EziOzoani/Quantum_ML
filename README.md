@@ -1,2 +1,5 @@
 # Quantum_kNN
-Amplitude Encoding: Uses U gate feature mapping
+Angle Encoding: Uses U gate feature mapping. It calles datasets using sklearn.
+Amplitude encoding
+KNN : Where the bones of the Algorithm  is.
+
