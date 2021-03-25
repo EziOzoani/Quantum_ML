@@ -27,4 +27,4 @@ Data Encoding Done ✅
 
 Circuit Section ✅
 
-Writing: Introduction & Background
+Editing: Introduction & Background
