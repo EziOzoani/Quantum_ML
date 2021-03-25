@@ -10,8 +10,6 @@ KNN : Where the bones of the Algorithm  is.
 ----------------------------------------------------------------------------------------
 TO:Do 
 
-1.) Add Classical ML comparison
+1.) Include JKu fix
 
-i) Add more comments to KNN
-
-ii) clean up comments in general 
+2.) clean up comments in general + layout 
