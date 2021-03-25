@@ -10,7 +10,7 @@ KNN : Where the bones of the Algorithm  is.
 ----------------------------------------------------------------------------------------
 TO:Do 
 
-1.) Include JKu fix
+1.) Include JKU fix's
 
 2.) clean up comments in general + layout 
 
