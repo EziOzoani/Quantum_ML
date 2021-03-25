@@ -25,4 +25,4 @@ Quantum Run ✔️
 
 Data Encoding Done ✅ 
 
-Editing: Circuit Section 
+Circuit Section ✅
