@@ -23,8 +23,10 @@ Classical Run ✔️
 
 Quantum Run ✔️
 
-Data Encoding Done ✅ 
+Data Encoding Done ✅
 
 Circuit Section ✅
 
 Introduction & Background ☑️
+
+To:Do  --> Results, What's Next , Conclusion
