@@ -18,3 +18,11 @@ TO:Do
 --------------
 
 Presentation To:Do 
+
+Classical Run ✔️
+
+Quantum Run ✔️
+
+Data Encoding Done ✅ 
+
+Editing: Circuit Section 
