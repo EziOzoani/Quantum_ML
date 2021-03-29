@@ -44,7 +44,7 @@ Implementation:
 
 Circuitory 
 
-  QKNN
+    QKNN
   
   Grovers
   
