@@ -44,7 +44,12 @@ Implementation:
 
 Circuitory 
   QKNN
+  
   Grovers
+  
   QSVM
 
 Data Encoding
+  Feature Map
+  
+  Amplitude Encoding
