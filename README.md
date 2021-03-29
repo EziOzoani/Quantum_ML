@@ -55,3 +55,7 @@ Data Encoding
   Feature Mapping
   
   Amplitude Encoding
+  
+Quantum Run
+
+Classcial Run
