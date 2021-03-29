@@ -43,8 +43,8 @@ In progress:
 Implementation:
 
 Circuitory 
-  KNN
+  QKNN
   Grovers
-  SVM
+  QSVM
 
 Data Encoding
