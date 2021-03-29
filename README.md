@@ -52,7 +52,7 @@ Circuitory
 
 Data Encoding
 
-  Feature Mapping
+  - Feature Mapping
   
   Amplitude Encoding
 
