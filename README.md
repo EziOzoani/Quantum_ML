@@ -40,21 +40,22 @@ Conclusion ✔️
 ----------------------------------------------
 
 In progress: 
-Implementation:
+        
+            Implementation:
 
 Circuitory 
 
-    QKNN
+   - QKNN
   
-    Grovers
+   - Grovers
   
-     QSVM
+   - QSVM
 
 Data Encoding
 
   - Feature Mapping
   
-  Amplitude Encoding
+  - Amplitude Encoding
 
 Measurements
   
