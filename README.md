@@ -45,3 +45,6 @@ Implementation:
 Circuitory 
   KNN
   Grovers
+  SVM
+
+Data Encoding
