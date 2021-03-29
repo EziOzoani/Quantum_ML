@@ -55,7 +55,9 @@ Data Encoding
   Feature Mapping
   
   Amplitude Encoding
+
+Measurements
   
 Quantum Run
 
-Classcial Run
+Classcial Run ( JKU )
