@@ -40,4 +40,8 @@ Conclusion ✔️
 ----------------------------------------------
 
 In progress: 
-Implementation 
+Implementation:
+
+Circuitory 
+  KNN
+  Grovers
