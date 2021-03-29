@@ -43,6 +43,7 @@ In progress:
 Implementation:
 
 Circuitory 
+
   QKNN
   
   Grovers
@@ -50,6 +51,7 @@ Circuitory
   QSVM
 
 Data Encoding
-  Feature Map
+
+  Feature Mapping
   
   Amplitude Encoding
