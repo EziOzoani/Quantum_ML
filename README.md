@@ -49,7 +49,7 @@ Circuitory
   
    - Grovers ✔️
   
-   - QSVM
+   - QSVM ✔️
 
 Data Encoding
 
