@@ -45,11 +45,11 @@ In progress:
 
 Circuitory 
 
-   - QKNN
+   - QKNN ✔️
   
-   - Grovers
+   - Grovers✔️
   
-   - QSVM
+   - QSVM✔️
 
 Data Encoding
 
