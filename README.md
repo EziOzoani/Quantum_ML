@@ -47,7 +47,7 @@ Circuitory
 
    - QKNN ✔️
   
-   - Grovers
+   - Grovers ✔️
   
    - QSVM
 
