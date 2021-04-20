@@ -47,9 +47,9 @@ Circuitory
 
    - QKNN ✔️
   
-   - Grovers✔️
+   - Grovers
   
-   - QSVM✔️
+   - QSVM
 
 Data Encoding
 
