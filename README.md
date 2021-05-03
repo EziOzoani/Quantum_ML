@@ -50,6 +50,7 @@ Circuitory
    - Grovers ✔️
   
    - QSVM ✔️
+   -  To:DO 
 
 Data Encoding
 
