@@ -50,7 +50,7 @@ Circuitory
    - Grovers ✔️
   
    - QSVM ✔️
-   -  To:DO --> link SWAP gate
+   -  To:DO --> link SWAP gate in Implementation 
 
 Data Encoding
 
