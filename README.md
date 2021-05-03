@@ -55,7 +55,7 @@ Data Encoding
 
   - Feature Mapping ✔️
   
-  - Amplitude Encoding 
+  - Amplitude Encoding ✔️
   
 
 Measurements
