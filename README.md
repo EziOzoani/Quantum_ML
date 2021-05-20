@@ -47,6 +47,7 @@ In progress:
          
          
  Qunantum Applications
+    - QkNN
          
   
            Implementation:
