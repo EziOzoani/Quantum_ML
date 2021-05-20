@@ -41,7 +41,11 @@ Conclusion ✔️
 
 In progress: 
         
-            Implementation:
+        
+         Background:
+         
+  
+           Implementation:
 
 Circuitory 
 
@@ -64,3 +68,6 @@ Measurements
 Quantum Run
 
 Classcial Run ( JKU )
+
+  
+    
