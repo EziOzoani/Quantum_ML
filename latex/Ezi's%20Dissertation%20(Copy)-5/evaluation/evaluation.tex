@@ -1,0 +1,62 @@
+\chapter{Evaluation}
+This dissertation has researched the application of cutting-edge quantum computing algorithms and data encoding techniques by translating their classically known methods to quantum algorithms, all encompassed in a modular tool. %It illustrates the ease of creating an initial quantum circuit and the development of quantum computing in general over the past years. %
+
+Beginning with the quantum enhanced algorithm QSVM, this hybrid approach encompasses some classical variants of SVM, specifically within the kernel calculation. On the other hand, QkNN is a full quantum algorithm that is capable of classifying data by calculating and measuring the Hamming Distance between states.
+%The results from Chapter \ref{result} enable us to accurately compare QkNN with the classical kNN.
+This chapter provides a summation of the results gained from implementing and executing both of these algorithms and the methods used to derive the outputs. Grover's Search algorithm is also considered.
+%In addition to this, a discussion on how to further this work is provided in section \ref{QRec}.
+
+
+\section{Method}
+
+
+Before we evaluate our circuit outputs, we first consider other possible approaches for our quantum algorithms in comparison to the chosen implementations.
+
+
+
+\subsection{QSVM}
+In the implementation chapter we implemented \citep{mcrae2020} hybrid QSVM approach.
+An important critique of the QSVM implementation used in this work is that it is a hybrid instead of a pure quantum algorithm. This is due to the use of a classical kernel that reads quantum data inputs but executes the kernel classically.
+%whichafter training the data with the quantum feature maps%
+Another method using the D-Wave Quantum Annealer, described in \citep{WILLShh}, is a true quantum SVM approach. In that work, an ensemble of different solutions was generated that often generalises better for unseen data than the single global minimum of an SVM trained on a conventional computer, especially in cases where only limited training data is available \citep{WILLShh}.
+%Their results show that the ensemble of classifiers produced by the Quantum nnealer often surpasses the single classifier obtained by the classical SVM for the same computational problem \citep{WILLShh}.
+Unfortunately, the choice to work with Microsoft's Qiskit's library for this dissertation and the lack of Quantum Annealers supported by Qiskit resulted in an inability to implement this QSVM approach.
+
+\subsection{QkNN}
+
+% which algorithm you used and then say which ones used vs others considered--> recall that the Hamming distance algorithm was used in this qKnn applications. other.. 
+Other QkNN algorithms such as the Centroid classifier and the Dot Product were considered. The Centroid adaptation mentioned in \citep{lloydsubQkNNFid} would see the kNN transformed into a k-means method, where each class is defined by the centroid of all data within that class. While this could bring an additional quantum algorithm to the modular tool, it has problems with information loss. If a class contains two distributed clusters, the centroid would point to the middle. This in turn would cause the classification to suffer.
+
+The Dot Product method of \citep{QKNAll} is a hybrid quantum approach where the neighbours are sorted classically. While this approach would be interesting to contrast with, it does not provide the same benefits or advantages as the Hamming Distance QkNN, as it is a hybrid approach.
+
+
+\subsection{Grover's Search Algorithm}
+To continue with our quantum algorithms, the ability to test and compare a quantum centred algorithm \footnote{By this is meant an algorithm that is not a quantum version of a classical machine learning algorithm.} like Grover's Search algorithm in a classical environment would enable us to compare the methods and properties of this quantum implementation in a classical world. The JKU simulator enables quantum circuits' to be able to retain their quantum advantage, all while providing a fully comparative means of testing current classical machine learning algorithms within a quantum environment. %and future quantum advances. 
+This would be possible if the JKU simulator is updated to encompass full quantum based algorithms without error. To achieve this, continuous community collaboration is required in order to build up the JKU simulators and other quantum classical simulators. 
+
+\section{Results}
+We can now evaluate our circuit outputs to see if they fulfilled quantum computing's claimed advantage, and where possible shortcomings could stem from.
+
+\subsection{Shot Count}
+
+When evaluating the quantum circuits with differing shot counts, Figure \ref{ShotVRun} showed that circuit repetitions cause the runtime to increase. There is marginal runtime change when increasing from shot count 10 to 100, with a more noticeable runtime increase between 100 and 1,000 and an even greater difference between 1,000 and 8,192. 
+With the QSVM result, runtime is expected to be much higher than QkNN, due to the QSVM algorithm being a quantum hybrid algorithm with a classical kernel.
+However, Figure \ref{kNNRunT} showed that the performance of the QkNN algorithm outperformed the classical algorithm even with the highest shot count of 8,192. 
+
+% `As quantum machine learning continues to be used, QkNN and QSVM algorithms could be evaluated on even larger datasets that are 10000 or 100000 in dimensionality. At this point it would be best interesting to see the shot count effect on the larger dataset.
+
+The runtime of the QkNN algorithm with increasing shot count was evaluated using feature mapping for both datasets, as feature mapping reduces the resources required to describe a large set of data \citep{QiskitFMap}. This evaluation could be repeated for amplitude encoding to observe any possible effect on the results. It could be anticipated that the runtime would be still quite low by comparison with classical kNN. Perhaps the difference in resource load for the two encoding types could be made more visible by increasing the size of the datasets. Unfortunately, this test could not be performed on the 15 qubit IBM quantum computer as it was removed from public access just before this hypothesis could be tested. The quantum circuits implemented in this work were nine qubits long. The current largest publicly available quantum machine accepts circuits with a maximum depth of five. 
+
+
+\subsection{QSVM}
+Having considered the methods used for our quantum algorithms we now consider the results obtained. In relation to accuracy, both quantum machine learning algorithms did improve as the shot count increased. QSVM never surpassed the accuracy  of the classical SVM, and in only one instance did it improve on the runtime of the classical SVM. The use of a hybrid QSVM approach, with the classical kernel, allows one to anticipate such a result. 
+
+\subsection{QkNN}
+The QkNN with the Iris dataset almost reached the level of accuracy of the classical version. This result can be attributed to an increase in shot count, but also to the number of features chosen in relation to the size of the dataset. As will be clear from Figures \ref{Accuracy} and \ref{kNNRunT}, QkNN thrives on increased dimensionality.
+With a larger set of data, increased feature space and an improvement in noise reduction, QkNN could surpass the accuracy of the classical version. This would be  dependent on an improvement in noise mitigation and quantum error reduction.
+
+%Keeping with dimensionality, it is a curse on classical k-nearest neighbour runtime.
+
+Increased dimensionality increases the run time of classical kNN, but QkNN does not suffer from this problem.
+Looking at Figure \ref{kNNRunT}, all tested versions of QkNN outperformed the kNN implementations. This was not only expected but it also confirmed the capabilities of a quantum machine learning algorithm in comparison to its classical variant. As mentioned in Section \ref{QADD1}, QkNN places the entire training set into superposition and this enables the algorithm to calculate all distances between the input and the entire training set in a single run. So one would only need as many qubits as are needed to encode the entire training set. This results in a much faster run time, as QkNN does not encounter the same bottleneck as kNN with increasing datasets. 
+

@@ -1,0 +1,153 @@
+\documentclass[a4paper,oneside,12pt]{book}
+%----------------------------------------------------------------------------------------
+%	WELCOME!
+%   It's probably worth having a read through this file to set up the broad parameters.
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	COVER PAGE
+%   The cover page is laid out in title/title.tex. You can choose a colour
+%   or black and white logo
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	THESIS INFORMATION
+%   Put title, author name, degree, type of work, school, department in here
+%   It will be used for the title page and for the embedded PDF information
+%----------------------------------------------------------------------------------------
+
+\newcommand{\thesistitle}{A Modularised Tool for Quantum/Quantum Enhanced Machine Learning} % Your thesis title, this is used in the title and abstract
+\newcommand{\degree}{MSc (Computer Science)} % Your degree name, this is used in the title page and abstract
+\newcommand{\typeofthesis}{dissertation} % dissertation, Final Year Project, report, etc.
+\newcommand{\authorname}{Ezinwanne Ozoani} % Your name, this is used in the title page and PDF stuff
+%% Comment out the next line if you don't want your ID to appear
+\newcommand{\authorid}{
+} % Your ID
+\newcommand{\keywords}{Quantum, Machine Learning, Modular, Tools, QkNN, QSVM, IBM, Qiskit} % Keywords for your thesis
+\newcommand{\school}{\href{http://www.scss.tcd.ie}{School of Computer Science and Statistics}} % Your school's name and URL, this is used in the title page
+
+%% Comment out the next line if you don't want a department to appear
+%\newcommand{\department}{\href{http://researchgroup.university.com}{Department Name}} % Your research group's name and URL, this is used in the title page
+
+\AtBeginDocument{
+\hypersetup{pdftitle=\thesistitle} % Set the PDF's title to your title
+\hypersetup{pdfauthor=\authorname} % Set the PDF's author to your name
+\hypersetup{pdfkeywords=\keywords} % Set the PDF's keywords to your keywords
+\hypersetup{pdfsubject=\degree} % Set the PDF's keywords to your keywords
+}
+
+%% Language and font encodings
+\usepackage[T1]{fontenc} 
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+
+%% Bibliographical stuff
+\usepackage{natbib}
+% citation fix above
+
+%% Document size
+% include showframe as an option if you want to see the boxes
+\usepackage[a4paper,top=2.54cm,bottom=2.54cm,left=2.54cm,right=2.54cm,headheight=16pt]{geometry}
+
+%% Useful packages
+\usepackage{amsmath}
+\usepackage[autostyle=true]{csquotes} % Required to generate language-dependent quotes in the bibliography
+\usepackage[pdftex]{graphicx}
+\setlength {\marginparwidth }{2cm} 
+\usepackage{float} %required for the placement specifier H
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[colorlinks=true, allcolors=black]{hyperref}
+\usepackage{caption} % if no caption, no colon
+\usepackage{sfmath} %use sans-serif in the maths sections too
+\usepackage[parfill]{parskip}    % Begin paragraphs with an empty line rather than an indent
+\usepackage{setspace} % to permit one-and-a-half or double spacing
+\usepackage{enumerate} % fancy enumerations like (i) (ii) or (a) (b) and suchlike
+\usepackage{booktabs} % To thicken table lines
+\usepackage{fancyhdr}
+
+\pagestyle{plain} % Embrace simplicity!
+
+%% The Mechanical engineers require your name and ID on the top of every page.
+%% Uncomment the following block if you want your name and ID at the top of
+%% (almost) every page.
+
+%\pagestyle{fancy}
+%\fancyhf{} % sets both header and footer to nothing
+%\renewcommand{\headrulewidth}{0pt}
+%\cfoot{\thepage}
+%\ifdefined\authorid
+%\chead{\it \authorname\ (\authorid)}
+%\else
+%\chead{\it \authorname}
+%\fi
+%% End of block
+
+%% It is not a requirement of the university that the font should be sans-serif, but
+%% the Mechanical engineers require it. Comment out the following line to disable it
+\renewcommand{\familydefault}{\sfdefault} %use the sans-serif font as default
+
+%% If you're not using sans-serif, consider using Palatino instead of the LaTeX standard
+%\usepackage{mathpazo} % Use the Palatino font by default if you prefer it to Computer Modern
+
+\renewcommand{\theequation}{\arabic{equation}} %% use continuous equation numbers
+
+%% Format Chapter headings appropriately
+\usepackage{titlesec}
+\titleformat{\chapter}[hang] 
+{\normalfont\huge\bfseries}{\thechapter}{1cm}{} 
+
+\title{\thesistitle}
+\author{\authorname}
+
+\frontmatter
+\begin{document}
+\input{title/title.tex}
+\pagenumbering{roman}
+\section*{\Huge{Declaration}}
+\vspace{1cm}
+I hereby declare that this project is entirely my own work and that it has not been submitted as an exercise for a degree at this or any other university.
+
+\vspace{1cm}
+I have read and I understand the plagiarism provisions in the General Regulations of the University Calendar for the current year, found at \url{http://www.tcd.ie/calendar}.
+\vspace{1cm}
+
+I have also completed the Online Tutorial on avoiding plagiarism `Ready Steady Write', located at
+\url{http://tcd-ie.libguides.com/plagiarism/ready-steady-write}.
+\vspace{3cm}
+
+Signed:~\rule{5cm}{0.3pt}\hfill Date:~\rule{5cm}{0.3pt}
+
+\chapter*{Abstract}
+Machine learning based techniques have become widespread in recent years, and this has driven further developments in the field. %The use cases and the developments of machine learning increase as the rate of application rises. 
+One of these developments is the translation of machine learning algorithms from classical computers to quantum computers. The expansion of quantum hardware accessibility enables more extensive research into the potential speed-up quantum algorithms could provide. This speed-up could potentially play a big role in machine learning, where model training becomes slower as the size of training set grows.
+
+The dispersed nature of the resources and the information required to construct a complete quantum machine learning circuit affects the accessibility of quantum machine learning programming. This dissertation provides a centralised resource or starting point for those acquainted with software development rather than theoretical quantum physics. An introduction to the required quantum background, as well as a modular approach to Quantum k-Nearest Neighbour, Quantum Support Vector Mechanism and Grover's Search algorithm is provided. Additionally, these quantum algorithms are tested in order to analyse and observe their quantum speedup claims.
+
+
+\newpage
+\onehalfspacing\raggedright %\raggedright turns off justification and hypenation
+
+\section*{\Huge{Acknowledgements}}
+Many thanks to my supervisor Dr.Michael Brady from Trinity College for his continuous support and direction on this work. To my loving and supportive family and friends who upheld and encouraged me during my research. Finally, an acknowledgement to the Qiskit and JKU open source community for their input and collaboration.
+
+
+\tableofcontents
+\listoffigures
+\newpage
+
+\mainmatter
+\input{Introduction/Introduction(editing).tex}
+%\input{Introduction/introduction.tex}
+\input{Literature/background.tex}
+\input{Literature/StateOfTheArt}
+\input{background/implementation.tex}
+\input{results/results.tex}
+\input{evaluation/evaluation.tex}
+\input{conclusion/conclusion.tex}
+\bibliographystyle{unsrtnat}
+\bibliography{bibs/sample}
+\renewcommand{\thechapter}{A\arabic{chapter}}
+%\input{appendix/appendix.tex}
+
+
+\end{document}

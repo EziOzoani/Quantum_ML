@@ -1,0 +1,39 @@
+\chapter{Introduction}
+Quantum computers are known to solve certain difficult problems exponentially faster than classical computers. Integer factorisation on a classical computer is one such problem that grows exponentially in time with increasing input data. It can be solved in polynomial time using Shor’s algorithm \cite{Intro1} on a quantum computer. Similarly, Grover’s search algorithm  provides a quadratic speed up when searching for an item in an unsorted array \cite{Intro2}. %The list of algorithms that provide a quantum speedup has grown over the duration of the last two decades.
+
+A discipline where quantum computing promises a speed-up is Machine learning(ML). Quantum Machine Learning(QML) or Quantum Enhanced Machine Learning(QEML) have gained a lot of prominence, resulting in an increase in the number of published literature that covers the principles and techniques of QML \cite{Schuld_2014In5}. QML techniques currently in development can solve machine learning problems faster than their known classical algorithms \cite{Khan2019}. Supervised applications such as Support Vector Mechanism, unsupervised operations using clustering and reinforcement quantum machine learning methods have been proposed to provide exponential speed-ups as compared to their classical counterparts.
+
+
+\section{Problems and Objective}
+When researching quantum machine learning, two significant issues will be encountered. 
+
+There are many research papers on various quantum machine learning algorithms and circuitry topics, most of which are theoretically orientated. In addition, the components required to build a complete quantum circuit are dispersed across different publications. This scattered nature coupled with the necessary quantum physics knowledge, presents a barrier of entry before quantum code could be written.
+
+
+Objectives?
+
+
+Implementations of Quantum k-Nearest Neighbour, Grover's search algorithm and Quantum Support Vector Mechanism are explored. A modular circuit incorporating these algorithms is proposed, along with appropriate data encoding techniques.  
+
+The following contributions are made in this dissertation:
+
+
+%italics the work
+\begin{itemize}
+\item  An implementation of k-Nearest Neighbour based on the descriptions detailed in the work Quantum Algorithm for K-Nearest Neighbours Classification Based on the Metric of Hamming Distance \cite{HammInstruct} will be provided. Two variations of Grover's search algorithm and Quantum Support Vector Mechanism are also explored. These are delivered through illustrative and succinct implementations. 
+
+\end{itemize}
+
+\begin{itemize}
+\item In order to run classical data on a quantum circuit, quantum readable data is required. Existing data encoding methods, both theoretical and implemented, are dispersed across various research publications. This work will present different methods of data encoding in a centralised location.
+\end{itemize}
+
+\begin{itemize}
+\item Bench-marking will be preformed on the aforementioned quantum machine learning algorithms and their classical counterparts. This will allow for a critical review of their results. 
+\end{itemize}
+
+\begin{itemize}
+\item The final but the most important goal, is to provide these modular circuits in an accessible form. This will enable future development on this work to be easy and approachable. Particularly, for quantum enthusiasts and those more literate in software development than in quantum physics. To do so, the necessary python code is presented in a technical manner where detailed knowledge of quantum physics would not be necessary. However, the basic quantum theoretical knowledge will be explained in a concise and austere style.
+
+%it is intended that these modular circuits are accessible to software developers than quantum physicts 
+\end{itemize}
