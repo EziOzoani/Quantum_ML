@@ -1,4 +1,6 @@
-# A Modularised Tool for Quantum/Quantum Enhanced Machine Learning
+# A Modularised Tool for Quantum/Quantum Enhanced 
+        
+Machine Learning
 
 
 
