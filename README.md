@@ -1,6 +1,4 @@
-# A Modularised Tool for Quantum/Quantum Enhanced 
-        
-# Machine Learning
+# A Modularised Tool for Quantum/Quantum Enhanced Machine Learning
 
 
 
@@ -20,7 +18,7 @@ I aim was to provide not only a central location with illustrative and deatiled 
 - The first and the most important aim is to provide a circuit with all three stages of a quantum machine learning circuit (data encoding, quantum algothim and quanutm machine learning exection) with modular components in an accessible form. This enables future development on this work to be easy and approachable, particularly for quantum enthusiasts and those more literate in software development than in quantum physics. To do so, the necessary python code is presented in a technical manner where detailed knowledge of quantum physics would not be necessary. However, the basic quantum theoretical knowledge will be explained in a concise and austere style
 
   
- - For the algorithm stage of the circuit, a full quantum machine learning implementation of k-Nearest Neighbour is detailed based on the descriptions detailed in the work 'Algorithm for k-Nearest Neighbours Classification based on the Metric of Hamming Distance' [Sharma, 2020]. Two variations of Grover’s Search algorithm and QSVM are also explored, these are delivered through illustrative and succinct implementations.
+ - For the algorithm stage of the circuit, a full quantum machine learning implementation of k-Nearest Neighbour is detailed based on the descriptions detailed in the work _Algorithm for k-Nearest Neighbours Classification based on the Metric of Hamming Distance_ [Sharma, 2020](https://arxiv.org/abs/2002.10453). Two variations of Grover’s Search algorithm and QSVM are also explored, these are delivered through illustrative and succinct implementations.
     
  -  In order to run classical data on a quantum circuit, quantum readable data is required. Existing data encoding methods, both theoretical and implemented, are dispersed across various research publications. My work presents different methods for data encoding both the circuit design and the code in a centralised location.
  
