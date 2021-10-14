@@ -1,4 +1,4 @@
-# Quantum_kNN
+# A Modularised Tool for Quantum/Quantum Enhanced Machine Learning
 
 
 
@@ -24,4 +24,6 @@ I aim was to provide not only a central location with illustrative and deatiled 
  
  -  Finally, bench-marking is performed on the aforementioned quantum machine learning algorithms and their classical counterparts. In addition to the quantum computer execution, my work details an external classical quantum based simulator, the JKU simulator, its advantages, current state and the necessary implementation. These measurement techniques allow for a critical review of the circuit results, for the different circuit components
  
+ 
+## Contents
    
