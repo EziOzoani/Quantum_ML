@@ -14,6 +14,7 @@ KNN : Where the bones of the Algorithm  is.
 
 My original aim was to explore Quantum computing in the financial space, this then shifted to wanting to creaate a quantum recommenender system to illustrate the commercial capabilities of quantum machines.
 During my research into quantum programmign I realised that outisee of basic circuit buidling proivded by Qiskit the information needed to build a full Quantum Machine learning circuit was distributed amongst different physics based research publications. These publications (some of which are explored more [here]), mostly do not explore all three stages of a quantum machine learnign cirucit 
+
     - Data encoding: how do you get a quantum computer to read classical data 🤔
     - Quantum Algothims: psst I provide 3 algothims and different apparoaches for each 🤫
     - Quantum Machine execution: Due to the ever evolving nature of quantum computing, some publicaitons could either only theorise possible results or preform their algorithm executions on a quantum simulator. The latter is due to the previous lack of quantum computers or the lack of quantum machines large enough to perform their circuit executions. 
