@@ -27,3 +27,4 @@ I aim was to provide not only a central location with illustrative and deatiled 
  
 ## Contents
    
+[Research Paper](https://github.com/EziOzoani/Quantum_ML/blob/main/latex/Ezi_s_Dissertation__Copy_.pdf)
