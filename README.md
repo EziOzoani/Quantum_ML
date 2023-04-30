@@ -4,7 +4,7 @@
 
 ## Why
 
-My original aim was to explore Quantum computing in the financial space, this then shifted to wanting to creaate a quantum recommenender system to illustrate the commercial capabilities of quantum machines.
+My original aim was to explore Quantum computing in the financial space, this then shifted to wanting to create a quantum recommenender system to illustrate the commercial capabilities of quantum machines.
 During my research into quantum programmign I realised that outside of basic circuit building proivded by Qiskit the information needed to build a full Quantum Machine learning circuit was distributed amongst different physics based research publications. These publications (some of which are explored more [here](https://github.com/EziOzoani/Quantum_ML/blob/main/latex/Ezi_s_Dissertation__Copy_.pdf), usually do not explore all three stages of a quantum machine learning cirucit 
 
     - Data encoding: how do you get a quantum computer to read classical data 🤔
